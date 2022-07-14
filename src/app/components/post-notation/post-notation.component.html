@@ -1,0 +1,16 @@
+<div>
+  <p>Create Notation</p>
+  <form #myForm (ngSubmit)="Post(myForm)">
+    <label> Name:<input type="text" name="username" [(ngModel)]="notation.name" min="2" placeholder="Name"></label><br/>
+    <label> Text:<input type="text"  name="text" [(ngModel)]="notation.text" min="4" placeholder="Text"></label><br/>
+    <label> Start Data: <input type="date" name="start" [(ngModel)]="notation.startDate" ></label><br/>
+    <label> End Data: <input type="date" name="end" [(ngModel)]="notation.endData"></label><br>
+    <label> Public: <input type="checkbox" name="public" [(ngModel)]="notation.public"></label>
+    <label> Status: <select name="status" [(ngModel)]="notation.status">
+      <option>Starting</option>
+      <option>inProgress</option>
+      <option>Finished</option>
+    </select></label>
+    <button>Post</button>
+  </form>
+</div>

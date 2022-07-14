@@ -1,0 +1,10 @@
+<div>
+  <p>Registration</p>
+  <form #myForm (ngSubmit)="Register(myForm)">
+    <label> Name:<input type="text" name="username" [(ngModel)]="user.name" min="2" placeholder="Name"></label><br/>
+    <label> Email: <input type="email" name="email" [(ngModel)]="user.email" placeholder="Email"></label><br/>
+    <label> Password: <input type="password" name="password" [(ngModel)]="user.password" placeholder="password"></label><br>
+    <button>Register</button>
+  </form>
+</div>
+

@@ -1,0 +1,11 @@
+<p class="top">Your Friend:</p>
+<div *ngIf="token" class="notations">
+  <div *ngFor="let i of friend">
+    <div class="topNotation" *ngIf="i.id"><p class="name">{{i?.name}}</p>
+      <button><a routerLink="/users/{{i?.friendId}}">More</a></button>
+    </div>
+  </div>
+</div>
+<div class="tok" *ngIf="!token">
+  You need to login to see your notations!!!
+</div>

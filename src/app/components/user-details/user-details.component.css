@@ -1,0 +1,41 @@
+.wrap{
+  background-color: #455073;
+  border-top: 7px solid silver;
+  border-bottom: 7px solid silver;
+}
+p{
+  padding: 10px;
+  font-family: Georgia, Serif;
+  font-size: 25px;
+}
+button{
+  margin-left: 250px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #4a6b49;
+  font-family: Georgia, Serif;
+  padding: 10px;
+  font-size: 15px;
+}
+button:hover{
+  font-size: 20px;
+}
+.box{
+  background-color: silver;
+  border: 4px black solid;
+}
+.topNotation{
+  display: flex;
+}
+.name{
+  margin: 20px;
+}
+.data{
+  margin-top: 20px;
+  margin-left: 500px;
+}
+.text{
+  margin-left: 30px;
+  font-family: Georgia, Serif;
+  font-size: 17px;
+}

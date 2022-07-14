@@ -1,0 +1,16 @@
+
+div{
+  background-color: #9ba1b0;
+  padding: 10px;
+  font-family: Georgia, Serif;
+  font-size: 25px;
+
+}
+button{
+  margin-left: 60px;
+  border-radius: 5px;
+  background-color: #6d8c96;
+  font-family: Georgia, Serif;
+  padding: 5px;
+  font-size: 15px;
+}

@@ -1,0 +1,25 @@
+
+.header {
+  display: flex;
+  background-color: #778177;
+  height: 100px;
+  justify-content: space-around;
+  border-bottom: 5px solid gainsboro;
+}
+a{
+  margin-top: 100px;
+  font-family: Arial;
+  font-size: 35px;
+  color: #313680;
+  text-decoration: none;
+  border: 3px solid #1e2125;
+  border-radius: 10px;
+}
+a:hover{
+  font-size: 40px;
+  background-color: #94a694;
+}
+.d{
+  margin-top: 25px;
+}
+

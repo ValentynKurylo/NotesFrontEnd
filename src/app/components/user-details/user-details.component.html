@@ -1,0 +1,22 @@
+
+<div class="wrap">
+  <p>{{userDetail?.id}} ) {{userDetail?.name}} </p><br/>
+  <p>email - {{userDetail?.email}} </p> <p *ngIf="isFriend">You are Friend</p><br/>
+  <button (click)="showNotation()">{{buttonValue}}</button>
+  <button (click)="AddFriend()" *ngIf="!isFriend">Add Friend</button>
+  <button (click)="DeleteFriend()" *ngIf="isFriend">Delete Friend</button>
+  <div *ngIf="b">
+    <div *ngIf="lenghtN">
+      <div class="box" *ngFor="let n of natations">
+        <div class="topNotation"><p class="name">{{n.name}}</p>
+          <p class="data">{{n.startDate}}   ---   {{n.endData}}</p>
+        </div>
+        <p class="text">Status: {{n.status}}</p>
+        <hr/>
+        <p class="text">{{n.text}}</p>
+      </div>
+
+    </div>
+    <div *ngIf="!lenghtN">No</div>
+  </div>
+</div>

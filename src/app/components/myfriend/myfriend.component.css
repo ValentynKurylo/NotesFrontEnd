@@ -1,0 +1,40 @@
+.top{
+  margin: 30px;
+  font-size: 40px;
+  font-family: Georgia, Serif;
+  background-color: darkgray;
+}
+.notations{
+  background-color: gainsboro;
+  border: 3px silver solid;
+}
+.topNotation{
+  display: flex;
+  margin-top: 10px;
+}
+.name{
+  margin: 20px;
+  font-size: 30px;
+  font-family: Georgia, Serif;
+}
+
+button{
+  width: 100px;
+  height: 35px;
+  border-radius: 7px;
+  margin-left: 150px;
+  margin-top: 15px;
+  background-color: #7ca97c;
+  font-family: Georgia, Serif;
+  font-size: 20px;
+}
+.tok{
+  font-family: Georgia, Serif;
+  font-size: 45px;
+  margin-top: 10%;
+  width: 35%;
+  height: 200px;
+  margin-left: 30%;
+  background-color: silver;
+  align-content: center;
+}

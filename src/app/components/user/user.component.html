@@ -1,0 +1,27 @@
+<div class="wrap">
+  <div class="p">
+    <p>Find User</p>
+    <p class="chose">Chose User</p></div>
+  <div class="forForms">
+    <form #myForm (ngSubmit)="findUser(myForm)">
+      <input type="text" name="name" placeholder="enter username" [(ngModel)]="data">
+      <button type="submit">find</button>
+    </form>
+    <form [formGroup]="myForm1" (change)="Show()" class="form2">
+      <select [formControlName]="'name'">
+        <option value="{{u.id}}" *ngFor="let u of users">{{u.name}}</option>
+      </select>
+    </form>
+  </div>
+  <div *ngIf="user" class="OneUser">
+    <p class="UserP">{{user?.id}}) {{user?.name}}</p>
+    <hr/>
+    <button class="but" (click)="UserDetails()">Details</button>
+  </div>
+  <div *ngIf="users1" class="OneUser"> <p *ngFor="let u of users1">{{u.id}} ) {{u.name}}  <button class="but">Details</button></p> </div>
+  <div class="box">
+    <app-one-user *ngFor="let user of users" [user]="user"></app-one-user>
+  </div>
+</div>
+
+

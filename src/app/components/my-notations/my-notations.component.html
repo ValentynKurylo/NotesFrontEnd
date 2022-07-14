@@ -1,0 +1,18 @@
+<p class="top">My Notations:</p>
+<div *ngIf="notations" class="notations">
+  <div *ngFor="let notation of notations">
+    <div class="topNotation"><p class="name">{{notation?.name}}</p>
+      <p class="data">{{notation?.startDate}}   ---   {{notation?.endData}}</p>
+      <button><a routerLink="/{{notation.id}}">More</a></button>
+    </div>
+    <p class="text">Status: {{notation?.status}}</p>
+    <p class="text">Public: {{notation?.public}}</p>
+    <hr/>
+    <p class="text">{{notation?.text}}</p>
+    <hr/>
+    <hr/>
+  </div>
+</div>
+<div class="tok" *ngIf="!token">
+  You need to login to see your notations!!!
+</div>
